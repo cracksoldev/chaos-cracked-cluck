@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* CRACK CHAOS DESIGN SYSTEM - MEME CODED MADNESS */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Chaotic Neon Colors */
+    --background: 270 100% 5%;
+    --foreground: 60 100% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card Chaos */
+    --card: 280 80% 8%;
+    --card-foreground: 60 100% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 280 80% 8%;
+    --popover-foreground: 60 100% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Hot Pink Primary */
+    --primary: 328 100% 54%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Toxic Green Secondary */
+    --secondary: 120 100% 50%;
+    --secondary-foreground: 270 100% 5%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Chaos */
+    --muted: 280 50% 15%;
+    --muted-foreground: 60 50% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Fire Orange Accent */
+    --accent: 16 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive Red */
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and Input */
+    --border: 328 100% 54%;
+    --input: 280 80% 12%;
+    --ring: 120 100% 50%;
 
-    --radius: 0.5rem;
+    /* Meme Yellow */
+    --meme-yellow: 51 100% 50%;
+    
+    /* Chaos Gradients */
+    --gradient-chaos: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)), hsl(var(--meme-yellow)));
+    --gradient-fire: linear-gradient(135deg, hsl(var(--accent)), hsl(0 100% 60%));
+    --gradient-toxic: linear-gradient(90deg, hsl(var(--secondary)), hsl(120 100% 70%));
+    --gradient-pink: linear-gradient(180deg, hsl(var(--primary)), hsl(300 100% 70%));
+    
+    /* Chaos Shadows */
+    --shadow-chaos: 0 0 30px hsl(var(--primary) / 0.5), 0 0 60px hsl(var(--secondary) / 0.3);
+    --shadow-fire: 0 0 40px hsl(var(--accent) / 0.6);
+    --shadow-glow: 0 0 20px hsl(var(--meme-yellow) / 0.8);
+    
+    /* Animations */
+    --bounce-chaos: bounce 2s infinite;
+    --shake: shake 0.5s infinite;
+    --pulse-wild: pulse 1s infinite;
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +126,105 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
   }
+}
+
+/* CHAOS ANIMATIONS AND UTILITIES */
+@layer utilities {
+  .gradient-chaos {
+    background: var(--gradient-chaos);
+  }
+  
+  .gradient-fire {
+    background: var(--gradient-fire);
+  }
+  
+  .gradient-toxic {
+    background: var(--gradient-toxic);
+  }
+  
+  .gradient-pink {
+    background: var(--gradient-pink);
+  }
+  
+  .shadow-chaos {
+    box-shadow: var(--shadow-chaos);
+  }
+  
+  .shadow-fire {
+    box-shadow: var(--shadow-fire);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .animate-shake {
+    animation: shake 0.5s infinite;
+  }
+  
+  .animate-bounce-wild {
+    animation: bounce 1s infinite;
+  }
+  
+  .animate-pulse-chaos {
+    animation: pulse-chaos 1.5s infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+  
+  .text-meme-yellow {
+    color: hsl(var(--meme-yellow));
+  }
+  
+  .bg-meme-yellow {
+    background-color: hsl(var(--meme-yellow));
+  }
+  
+  .hover-chaos:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: var(--shadow-chaos);
+    transition: all 0.3s ease;
+  }
+  
+  .hover-fire:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-fire);
+    transition: all 0.2s ease;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  75% { transform: translateX(5px) rotate(5deg); }
+}
+
+@keyframes pulse-chaos {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.8), 0 0 60px hsl(var(--secondary) / 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
 }

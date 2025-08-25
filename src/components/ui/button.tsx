@@ -18,12 +18,18 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        chaos: "gradient-chaos text-white font-bold shadow-chaos hover-chaos animate-pulse-chaos border-2 border-meme-yellow",
+        fire: "gradient-fire text-white font-bold shadow-fire hover-fire animate-bounce text-lg",
+        toxic: "gradient-toxic text-black font-bold shadow-glow hover:animate-shake border-2 border-primary",
+        meme: "bg-meme-yellow text-black font-black shadow-chaos hover:animate-wiggle border-4 border-primary text-xl",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        xl: "h-16 px-12 py-4 text-2xl",
+        chaotic: "h-20 px-16 py-6 text-3xl font-black",
       },
     },
     defaultVariants: {

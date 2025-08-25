@@ -67,8 +67,13 @@ const FooterSection = () => {
 
         {/* Final Call to Action */}
         <div className="mb-12">
-          <Button variant="meme" size="chaotic" className="font-comic animate-pulse-chaos mb-4">
-            🎪 EMBRACE THE CHAOS 🎪
+          <Button 
+            variant="meme" 
+            size="chaotic" 
+            className="font-comic animate-pulse-chaos mb-4"
+            onClick={() => window.open("https://pump.fun/coin/BuB5bKwuPmFqEQX8twcJ6irZyV8pgo6TJ8PzF2wLpump", "_blank")}
+          >
+            🎪 BUY $CRACK NOW 🎪
           </Button>
           
           <div className="text-xl font-bold text-white animate-bounce">

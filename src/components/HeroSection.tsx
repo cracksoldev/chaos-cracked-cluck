@@ -59,6 +59,7 @@ const HeroSection = () => {
             variant="chaos" 
             size="chaotic"
             className="font-comic animate-pulse-chaos"
+            onClick={() => window.open("https://pump.fun/coin/BuB5bKwuPmFqEQX8twcJ6irZyV8pgo6TJ8PzF2wLpump", "_blank")}
           >
             🚀 ENTER THE CHAOS 🚀
           </Button>
@@ -67,6 +68,7 @@ const HeroSection = () => {
             variant="fire" 
             size="xl"
             className="font-comic"
+            onClick={() => window.open("https://pump.fun/coin/BuB5bKwuPmFqEQX8twcJ6irZyV8pgo6TJ8PzF2wLpump", "_blank")}
           >
             🔥 BUY $CRACK 🔥
           </Button>

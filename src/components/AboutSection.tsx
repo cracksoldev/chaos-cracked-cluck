@@ -92,8 +92,13 @@ const AboutSection = () => {
 
         {/* Action Button */}
         <div className="text-center mt-16">
-          <Button variant="toxic" size="xl" className="font-comic animate-bounce">
-            🐔 JOIN THE CHAOS 🐔
+          <Button 
+            variant="toxic" 
+            size="xl" 
+            className="font-comic animate-bounce"
+            onClick={() => window.open("https://pump.fun/coin/BuB5bKwuPmFqEQX8twcJ6irZyV8pgo6TJ8PzF2wLpump", "_blank")}
+          >
+            🐔 BUY $CRACK NOW 🐔
           </Button>
         </div>
       </div>

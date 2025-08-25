@@ -138,10 +138,20 @@ const HowToPlaySection = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <Button variant="meme" size="xl" className="font-comic animate-pulse-chaos mr-4">
-            🎮 START THE CHAOS 🎮
+          <Button 
+            variant="meme" 
+            size="xl" 
+            className="font-comic animate-pulse-chaos mr-4"
+            onClick={() => window.open("https://pump.fun/coin/BuB5bKwuPmFqEQX8twcJ6irZyV8pgo6TJ8PzF2wLpump", "_blank")}
+          >
+            🎮 BUY $CRACK & START 🎮
           </Button>
-          <Button variant="fire" size="lg" className="font-comic animate-shake">
+          <Button 
+            variant="fire" 
+            size="lg" 
+            className="font-comic animate-shake"
+            onClick={() => window.open("https://dexscreener.com/solana", "_blank")}
+          >
             📊 CHECK CHARTS 📊
           </Button>
         </div>
